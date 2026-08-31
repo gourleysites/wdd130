@@ -1,0 +1,278 @@
+HTML stands for HyperText Markup Language
+and is one of the three core technologies
+of the web: HTML, CSS, and JavaScript.
+
+HTML defines the structure and meaning of
+a web document. Hypertext refers to the way
+hypertext links are placed in the document 
+that allows users to move from one page to
+another. Markup is a set of symbols or
+codes for displaying content on the 
+internet. Web browsers, like Google, use
+HTML markup and content to render pages.
+
+Basic Page Structure:
+Basic Ex:
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Relevant Document Title</title>
+    </head>
+    <body>
+    </body>
+</html>
+
+Filled Ex:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Favorite Things</title>
+    </head>
+    <body>
+        <h1>Favorite Things</h1>
+        <p>Here is a list of some of my favorite things.</p>
+        <p>I love my family and the temple. Here are some pictures of them:</p>
+        <img src="images/family.jpg" alt="My Family">
+        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+    </body>
+</html>
+
+The basic structure of a webpage is to have an html element that defines
+the entire page and contains two major sections, the head and the body.
+The head and the body elements come between two opening and closing
+html tags: <html> ... </html>, which is how you define that they are
+contained within the html element.
+
+The base html tag should define an attribute with the language of the
+page such as: <html lang="en-US"> ... </html>.
+
+The Head Section:
+
+The head element should contain the following elements as children to
+help define important properties of the page:
+
+<meta charset="utf-8"> Is used to contain extra information about a 
+webpage. The charset is used to tell the computer the way the file stores
+the characters. The standard type of utf-8 is used for almost all
+webpages.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This meta taag helps define the way the page should be rendered on
+various devices. There are different values that can be provided.
+
+<title>My Favorite Things</title> The title element defines the title
+of the page to show in the browser tab. It does not apppear on the
+page itself.
+
+The Body Section:
+
+The body element contains all of the content that you want to display
+on the page. For some pages it can be very small and simple and for
+other pages it can be very large and complex. It all depends on the
+content that you want the user to see.
+
+<h1>Favorite Things</h1> This defines a heading for the page. You can
+use h1, h2, h3, h4, h5, and h6 for many levels of sub-headings.
+
+<p> ... </p> Paragraph tags are the most common tag for holding
+the text of the page.
+
+<img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+Image tags make it possible to display images on the screen. This image
+provides the location of the image file and also the alternate text in
+case the image cannot be seen.
+
+Image types on the web:
+
+JPEG/JPG: Typically used for photographs and complex images. Uses a
+compression that looses some information but can greatly reduce
+file size.
+
+PNG: Typically used for graphics, logos, and images requiring a 
+transparent background. Uses compression that does not lose
+information and supports alpha transparency.
+
+GIF: Typically used for small animations and simple graphics. Limited
+to 256 colors, but does support basic transparency and animations.
+
+WEBP: A more modern format that supports better compression than JPG
+and PNG while also providing for animation and transparency. Can be
+used as an alternative to JPG and PNG, but it is not quite as popular
+at this point.
+
+SVG: Typically used for logos, icons, and text that need to scale
+cleanly to any size.
+
+Including Images on a Web Page:
+
+Ex:
+
+<img src="temple.jpg" alt="A picture of the temple.">
+<img src="our-process.png" alt="A graphic describing the company's process">
+<img src="logo.svg" alt="Company logo">
+
+Each of these use a different type of image format. You do not have to
+do anything different in the html to use them. You just include the
+file name. The alt attributes text is very important for many reasons including, to provide a description of the image in case it does not
+load right away, to provide information for robots that might crawl your
+page, such as for search engine optimization, and for users that may need
+screen readers to access your content.
+
+Alt Text Content Requirements:
+
+It is required to provide meaningful and descriptive alt text for all
+images in all WDD courses. The standard is that at least two (2) word,
+relevant description is provided for each image. Typically this means
+that you should avoid using phrases such as "image of" or "picture of"
+in your alt text. Instead, just describe what the image is showing.
+For example, instead of using alt="image of a sunset", you would use
+alt="sunset over the mountains".
+
+Ex:
+
+<img src="facebook.svg" alt="Follow us on Facebook">
+<img src="facebook.svg" alt="Facebook logo">
+<img src="facebook.svg" alt="Facebook icon">
+
+Image Optimization:
+
+Squoosh.app is a free online tool that you can use to optimize
+images for the web.
+
+Three Basic Steps of Image Optimization:
+
+1. Crop the original image to focus on the most important content.
+2. Resize the image to the maximum size that is required in the
+design of the web page.
+3. Reduce the quality of the image to an acceptable level which
+will reduce its file size.
+
+(In this course, all images must be optimized in order to reduce
+overall page weight. The standard is that all images need to be
+less than 125kB in memory size. If you have an image that is
+larger than 125kB, you will need to reduce its size by
+optimizing it.)
+
+File Path Essentials:
+
+File paths refer to the way we locate a file in a file system
+and your website uses file paths to link to files such as
+images and stylesheets. If a referenced asset, such as an
+image file, does not show up on your page either locally on
+your computer or when you publish it to GitHub Pages, you
+should check the file and file path.
+
+Common File Path Examples:
+
+Absolute Paths:
+
+An absolute path gives the full path to aa file and is used
+for external resources. When using absolute paths on the web,
+the path should begin with the protocol, such as https://.
+Absolute paths for a resource are always the same, regardless of where
+the source file is located.
+
+Ex:
+
+<img src="https://resources.thesite.com/images/breakfast.svg" alt="Typical breakfast items">
+
+Relative Paths:
+
+A relative file path defines how to find a file relative to the
+location of the source file. It may be in the same directory or it
+may be in a parent directory or in a subdirectory compared to the
+source file.
+
+If the target file is in the same directory, you can list the file name
+directory, or you can start with a period, which indicates the current
+directory. You use two periods to refer to the parent directory, and
+you put a forward slash between directory names.
+
+To reference a file that is in the current directory, you would use
+other.html or ./other.html. To reference a file in the parent directory
+you would use ../other.html. To reference a file that is beneath two
+sub directories, you would use folder1/folder2/other.html.
+
+Relative Path: File in same folder
+
+Referencing a file named about-us.html located in the same folder
+as the referencing HTML file that contains the <a> anchor tag.
+
+<a href="about-us.html">About Us<a>
+
+The file path does not begin with a protocol which means that the file
+path is relative to the html that contains the tag. Because the file
+path does not begin with a period or a slash, the computer will expect
+to find the about-us.html page in the same directory as the file that is
+referencing it.
+
+Another method that can be used to reference the current directory is to
+use the ./ notation at the beginning of the path.
+
+<a href="./about-us.html">About Us<a>
+
+Relative Path: File in subfolder
+
+Referencing an image named profile.png in a sub-folder named images
+(where the image folder is in the same main folder as the main
+source html file.).
+
+<img src="images/profile.png" alt="Xavier Rodriguez" width="100" height="200">
+
+Relative Path: A folder that is located in a parent or higher folder
+
+A file in the week02 folder references an image named castle.jpg, but
+this image is in an images folder that is located at the root level (a
+level higher than the week02 folder). The ../ notation is used to go
+up a folder.
+
+<img src="../images/castle.jpg" alt="A hunting lodge castle in Germany." width="300">
+
+File Path Summary:
+
+Starting a path with "/" will go to the root folder and start there.
+Starting a path with"../" will go one folder up and start there.
+Starting a path with"../../" will go two folders up and start there (and so on...).
+Starting a path with "./" indicates to start in the current folder.
+To move forward, or down a sub folder, start with the first sub-folder
+and include a "/" after each subfolder name.
+
+File and Folder Naming Standards:
+
+When working on the web, there are many things that affect the
+operation of the files, such as the browser, the protocols, the
+operating system, the language, etc. While many of these are out
+of your control, you can keep your work consistent and manageable
+through file and folder naming conventions.
+
+Naming Convention Rules:
+
+Use all lowercase syntax. 
+
+Bad - Products.html
+Good - products.html
+
+Do NOT use spaces in file and folder names. Instead, use hyphens -.
+
+Bad - design documents.html
+Good - design-documents.html
+
+Do NOT use special characters.
+
+Ex (avoid): <, >, \, /, #, ?, !, _
+
+Files and folder names should be as short and meaningful as possible.
+
+Bad - image13-v123523brokenbranchlifeimagery w200x200.png
+Good - winter-scene-small.png
+
+Use standard names for folders. (In this class, the standard names for sub-folders are:)
+
+styles - Folders with this name contain CSS files.
+images - Folders with this name contain images.
