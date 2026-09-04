@@ -423,3 +423,34 @@ Search engines also prefer websites that use proper heading structure
 because it helps them understand what your content is about. Following
 the correct heading order makes your website more accessible and easier
 to find in search results.
+
+An Introduction to CSS
+
+CSS (Cascading Style Sheets) is a rule set language that defines the
+style and presentation of an HTML document. CSS rules select elements
+from the document and contain style and layout delarations.
+
+CSS Syntax
+
+CSS rules are made up of a selector and a declaration block { }. The
+selector is the HTML element(s) you want to style and the declaration
+block contains one or more declarations separated by semicolons (;).
+Each declaration includes a CSS property name and a value, separated by
+a colon (:). The declaration block is enclosed in curly braces.
+
+CSS Rule Example
+
+The following CSS rule selects all the <h1> elements and sets four properties:
+
+- the background color of all the <h1> elements to dark blue
+- the text color of the content of all the <h1> elements to white
+- padding or space around the text content of 16 pixels
+- the text is aligned to the center of the <h1> block
+
+h1 (
+    background-color: darkblue;
+    color: white;
+    padding: 16px;
+    text-align: center;
+)
+
