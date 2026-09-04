@@ -276,3 +276,150 @@ Use standard names for folders. (In this class, the standard names for sub-folde
 
 styles - Folders with this name contain CSS files.
 images - Folders with this name contain images.
+
+HTML Semantic Elements
+
+Semantic and Non-Semantic HTML Tags
+
+Semantic tags have meaning built into their name. They tell both the browser and other developers what type of content they contain. Non-semantic tags do not have specific meaning about their content. They are used mainly for styling and layout purposes.
+
+What are Semantic Tags?
+
+Semantic tags describe the meaning and purpose of the content they
+contain. When you read the tag name, you can understand what kind of
+information is inside. These tags make your HTML code easier to read
+and help screen readers assist people with visual impairments.
+
+Common semantic tags include:
+
+header - Contains introductory content or navigation links
+nav - Contains navigation links to other pages or sections
+main - Contains the main content of the page
+section - Represents a distinct section of content
+article - Contains independent, self-contained content
+aside - Contains content that is related but separate from the main content
+footer - Contains closing information like contact details or copyright
+h1, h2, h3, h4, h5, h6 - Represent different levels of headings
+
+Ex:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Bog</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>My First Blog Post</h2>
+            <p>This is the content of my blog post.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright 2024 My Blog</p>
+    </footer>
+</body>
+</html>
+
+What Are Non-Semantic Tags?
+
+Non-semantic tags do not provide information about the meaning of their
+content. They are primarily used for styling and layout purposes. The
+two most common non-semantic tags are div and span.
+
+div - A container used for grouping and styling a section of a page
+span - A container used for styling small portions of text
+
+Ex:
+
+<div class="container">
+    <div class="sidebar">
+        <p>This is sidebar content</p>
+    </div>
+
+    <div class="content">
+        <p>This paragraph has a <span class="highlight">highlighted word</span> in it </p>
+    </div>
+</div>
+
+In this example, the div tags are used to create layout sections, and
+the span tag is used to highlight a specific word. The tags themselves
+do not tell us what the content represents, but they allow us to apply
+styling to organize and format the page.
+
+When to Use Each Type
+
+Use semantic tags whenever possible because they make your code more
+meaningful and accessible. Use semantic tags when the content has a
+specific purpose or meaning, such as navigation, main content, or
+article text.
+
+Use non-semantic tags when you need to group elements for styling
+purposes but the content does not have a specific meaning. For
+example, use a div to create a colored background area or use a span
+to change the color of a few words.
+
+HTML Heading Tags (h1-h6)
+
+HTML heading tags are used to create titles and section headers on
+web pages. These tags help organize content and make it easier for
+users to read and understand your webpage. Search engines also use
+heading tags to understand the structure and importance of your
+content.
+
+There are six different heading tags available, numbered h1 to h6.
+The h1 tag creates the largest and most important heading, while
+h6 creates the smallest heading.
+
+The Six Heading Tags
+
+h1 - The main title of your webpage. Use only one h1 tag per page.
+h2 - Major section headings that divide your content into main parts.
+h3 - Subsection headings that break down h2 sections into smaller parts.
+h4 - Minor headings for detailed subsections within h3 sections.
+h5 - Small headings for very specific content areas.
+h6 - The smallest heading, rarely used but available for detailed organization.
+
+How to Use Heading Tags
+
+You should use heading tags in order from largest to smallest. Do not
+skip heading levels. For example, do not use an h4 directly after an
+h2 without using h3 first.
+
+Ex:
+
+<h1>My First Website</h1>
+<h2>About Me</h2>
+<p>This section tells visitors about who I am.</p>
+<h3>My Education</h3>
+<p>I am studying web development at college.</p>
+<h3>My Hobbies</h3>
+<p>I enjoy reading books and playing sports.</p>
+<h2>Contact Information</h2>
+<p>You can reach me through email or phone.</p>
+
+Why You Should Not Skip Heading Levels
+
+It is important to use heading tags in the correct order without
+skipping levels. Skipping heading levels can cause problems for
+people who use screen readers to navigate websites. Screen readers
+are tools that help people with vision problems read web content
+by speaking it aloud.
+
+When you skip heading levels, screen readers cannot understand the
+proper structure of your webpage. This makes it difficult for users
+to jump between sections or understand how your content is organized.
+Search engines also prefer websites that use proper heading structure
+because it helps them understand what your content is about. Following
+the correct heading order makes your website more accessible and easier
+to find in search results.
