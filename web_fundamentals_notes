@@ -454,3 +454,107 @@ h1 (
     text-align: center;
 )
 
+CSS Units of Measurement
+
+Numeric Values
+
+In CSS, property length values are needed to provide layout and
+presentation control. There are two main types - absolute and relative.
+The absolute length, like 10px, is not relative to anything else and
+is typically the same size on most devices. Relative lengths, like 90%,
+are dependent on other items including the parent, sibling, or the size
+of the viewport.
+
+Color Values
+
+In addition to the numeric units used for sizes, CSS also allows you to
+specify colors in various ways. CSS color values for text, backgrounds, 
+and wherever applicable can be coded by the following methods:
+
+keyword: antiquewhite, burlywood, yellow, lightyellow, etc.
+
+hexadecimal RGB (red, gree, blue): #faebd7
+Where the first two characters are the red value, the next two are the
+green value, and the last two are the blue value in hexadecimal (base16)
+format (0 to F).
+
+RGB or RGBA: rgb(250, 235, 215) or rgb(250, 235, 215 / 1)
+Where r is a red value ranging from 0 to 255, g is a green value
+ranging from 0 to 255, b is a blue value ranging from 0 to 255, and
+the last value is the alpha value ranging from 0 to 1 (0% to 100%).
+
+HSLA: hsla(34, 78%, 91%, 1)
+Where h is the hue (0 to 360), s is the saturation (0% to 100%), 1 is
+the lightness (0% to 100%), and a is the alpha value (0 to 1).
+
+CSS Box Model
+
+The CSS Box Model is a box that wraps around every element. From the
+inside out, the model defines how the content, padding, border, and
+margin are rendered.
+
+Ex:
+
+The content is 400 pixels wide and the height is driven by the actual
+content, whatever it happens to be.
+
+div {
+    width: 400px;
+    margin: 10px;
+    border: 1px solid #000000;
+    padding: 15px;
+}
+
+content: This is where the text and images appear
+padding: This is the area around the content and separates the content from the border
+border: The border goes around the padding and separates the padding from the margin
+margin: This is the area outside of the border and can extend beyond the physical characters of the box model
+
+Now applying the box-sizing property of border-box
+
+div {
+    box-sizing: border-box;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid #000000;
+    padding: 15px;
+}
+
+CSS Shorthand Notation
+
+CSS shorthand  notation is generally considered best practice for
+conciseness, readability, and performance. However, longhand notation
+has its uses and can be more appropriate in certain situations where
+specificity is needed.
+
+CSS Shorthand Declarations using the margin property
+
+Longhand                 Shorthand
+
+margin-top: 10px;
+margin-right: 20px;      margin: 10 px 20px 30px 40px;
+margin-bottom: 30px;
+margin-left: 40px;
+
+margin-top: 10px;
+margin-right: 20px;      margin: 10px 20px 30px
+margin-bottom: 30px;
+margin-left: 20px;
+
+margin-top: 10px;
+margin-right: 20px;      margin: 10px 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+
+margin-top: 10px;
+margin-right: 10px;      margin: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+
+Common Border Shorthand
+
+border: 1px solid rgb(0 0 0 / 10%);
+
+Applies a 1 pixel border around the element with a solid line and a
+color that match the background of the contain/parent element. The
+color is set to 10% opacity.
