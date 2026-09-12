@@ -577,3 +577,89 @@ CSS is often used to set the position and size of an image. When setting the siz
 
 When an image is within a container that has defined dimensions, using width: 100% on the image is a standard approach to make it fill the container.
 
+CSS Variables
+
+CSS variables are a powerful tool for managing a website's design. They allow you to create reusable values that can be used throughout a stylesheet, helping to maintain design congruency. This activity will introduce you to CSS variables and how to use them in your projects.
+ 
+Websites at professional companies are often very large and complex and use the same colors or values in many places and change them all consistently. By creating a custom CSS variable, you can define the value in one place and then use it throughout the rest of the CSS, making it easier to keep everything consistent and make changes when needed.
+
+CSS variables are defined using two dashes followed by a name, like --main-color. You can store colors, sizes, fonts, or any CSS value in a variable. To use the variable, you write var() with the variable name inside the parentheses.
+
+Variables are usually defined in the :root selector, which makes them available to use anywhere in your CSS file. The :root selector represents the top level of your document.
+
+Defining CSS Variables
+
+To create a CSS variable, you define it inside a CSS rule using the double-dash syntax. The most common practice is to define all your variables at the top of your CSS file inside the :root selector.
+
+- Variable names must start with two dashes (--)
+- Variable names are case-sensitive
+- Variable values can by any valid CSS value
+- Glovbal variables are defined in :root
+
+Ex: (four variables defined in the root. The first two store color values, and the last two store size measurements that can be used for fonts and spacing)
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71
+    --font-size-large: 24px;
+    --margin-standard: 16px;
+}
+
+Using CSS Variables
+
+Once you have defined variables, you use them anywhere in your CSS by calling the var() fucntion. Inside the parentheses, write the variable name exactly as you defined it, including the two dashes.
+
+- var() function retrieves the value of a CSS variable
+- Fallback values can be provided in case the variable is not defined
+- Variables can be used for any CSS property value
+
+Ex: (the header and button classes use the variables we defined earlier. The button uses var(--text-color, white) - this means if the --text-color variable is not defined, it will use white as the fallback value)
+
+.header {
+    background-color: var(--primary-color);
+    font-size: var(--font-size-large);
+    margin: var(--margin-standard);
+}
+
+.button {
+    background-color: var(--secondary-color):
+    padding: var(--margin-standard);
+    color: var(--text-color, white);
+}
+
+Benefits of Using CSS Variables
+
+CSS variables provide several advantages that make your code more organized and easier to work with. They help create consistency across your website and make changes much simpler to implement.
+
+Easier maintenance - change one value to update it everywhere
+
+Consistency - ensures the same values are used throughout your design
+
+Readable code - meaningful names make CSS easier to understand
+
+Dynamic updates - variables can be changed with JavaScript
+
+Ex:
+
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    ---heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --broder: 1px solid rgb(0 0 0 / 0.1);
+}
+
+/* Some example variable use in the declarations. */
+
+h1 {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
+}
+
+aside {
+    margin: 10px auto;
+    padding: var(--padding);
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
