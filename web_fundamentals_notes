@@ -1,15 +1,6 @@
-HTML stands for HyperText Markup Language
-and is one of the three core technologies
-of the web: HTML, CSS, and JavaScript.
+HTML stands for HyperText Markup Language and is one of the three core technologies of the web: HTML, CSS, and JavaScript.
 
-HTML defines the structure and meaning of
-a web document. Hypertext refers to the way
-hypertext links are placed in the document 
-that allows users to move from one page to
-another. Markup is a set of symbols or
-codes for displaying content on the 
-internet. Web browsers, like Google, use
-HTML markup and content to render pages.
+HTML defines the structure and meaning of a web document. Hypertext refers to the way hypertext links are placed in the document  that allows users to move from one page to another. Markup is a set of symbols or codes for displaying content on the  internet. Web browsers, like Google, use HTML markup and content to render pages.
 
 Basic Page Structure:
 Basic Ex:
@@ -43,71 +34,43 @@ Filled Ex:
     </body>
 </html>
 
-The basic structure of a webpage is to have an html element that defines
-the entire page and contains two major sections, the head and the body.
-The head and the body elements come between two opening and closing
-html tags: <html> ... </html>, which is how you define that they are
-contained within the html element.
+The basic structure of a webpage is to have an html element that defines the entire page and contains two major sections, the head and the body. The head and the body elements come between two opening and closing html tags: <html> ... </html>, which is how you define that they are contained within the html element.
 
-The base html tag should define an attribute with the language of the
-page such as: <html lang="en-US"> ... </html>.
+The base html tag should define an attribute with the language of the page such as: <html lang="en-US"> ... </html>.
 
 The Head Section:
 
-The head element should contain the following elements as children to
-help define important properties of the page:
+The head element should contain the following elements as children to help define important properties of the page:
 
-<meta charset="utf-8"> Is used to contain extra information about a 
-webpage. The charset is used to tell the computer the way the file stores
-the characters. The standard type of utf-8 is used for almost all
-webpages.
+<meta charset="utf-8"> Is used to contain extra information about a  webpage. The charset is used to tell the computer the way the file stores the characters. The standard type of utf-8 is used for almost all webpages.
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-This meta taag helps define the way the page should be rendered on
-various devices. There are different values that can be provided.
+This meta taag helps define the way the page should be rendered on various devices. There are different values that can be provided.
 
-<title>My Favorite Things</title> The title element defines the title
-of the page to show in the browser tab. It does not apppear on the
-page itself.
+<title>My Favorite Things</title> The title element defines the title of the page to show in the browser tab. It does not apppear on the page itself.
 
 The Body Section:
 
-The body element contains all of the content that you want to display
-on the page. For some pages it can be very small and simple and for
-other pages it can be very large and complex. It all depends on the
-content that you want the user to see.
+The body element contains all of the content that you want to display on the page. For some pages it can be very small and simple and for other pages it can be very large and complex. It all depends on the content that you want the user to see.
 
-<h1>Favorite Things</h1> This defines a heading for the page. You can
-use h1, h2, h3, h4, h5, and h6 for many levels of sub-headings.
+<h1>Favorite Things</h1> This defines a heading for the page. You can use h1, h2, h3, h4, h5, and h6 for many levels of sub-headings.
 
-<p> ... </p> Paragraph tags are the most common tag for holding
-the text of the page.
+<p> ... </p> Paragraph tags are the most common tag for holding the text of the page.
 
 <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
-Image tags make it possible to display images on the screen. This image
-provides the location of the image file and also the alternate text in
-case the image cannot be seen.
+Image tags make it possible to display images on the screen. This image provides the location of the image file and also the alternate text in case the image cannot be seen.
 
 Image types on the web:
 
-JPEG/JPG: Typically used for photographs and complex images. Uses a
-compression that looses some information but can greatly reduce
-file size.
+JPEG/JPG: Typically used for photographs and complex images. Uses a compression that looses some information but can greatly reduce file size.
 
-PNG: Typically used for graphics, logos, and images requiring a 
-transparent background. Uses compression that does not lose
-information and supports alpha transparency.
+PNG: Typically used for graphics, logos, and images requiring a  transparent background. Uses compression that does not lose information and supports alpha transparency.
 
-GIF: Typically used for small animations and simple graphics. Limited
-to 256 colors, but does support basic transparency and animations.
+GIF: Typically used for small animations and simple graphics. Limited to 256 colors, but does support basic transparency and animations.
 
-WEBP: A more modern format that supports better compression than JPG
-and PNG while also providing for animation and transparency. Can be
-used as an alternative to JPG and PNG, but it is not quite as popular
-at this point.
+WEBP: A more modern format that supports better compression than JPG and PNG while also providing for animation and transparency. Can be used as an alternative to JPG and PNG, but it is not quite as popular at this point.
 
-SVG: Typically used for logos, icons, and text that need to scale
-cleanly to any size.
+SVG: Typically used for logos, icons, and text that need to scale cleanly to any size.
 
 Including Images on a Web Page:
 
@@ -117,22 +80,11 @@ Ex:
 <img src="our-process.png" alt="A graphic describing the company's process">
 <img src="logo.svg" alt="Company logo">
 
-Each of these use a different type of image format. You do not have to
-do anything different in the html to use them. You just include the
-file name. The alt attributes text is very important for many reasons including, to provide a description of the image in case it does not
-load right away, to provide information for robots that might crawl your
-page, such as for search engine optimization, and for users that may need
-screen readers to access your content.
+Each of these use a different type of image format. You do not have to do anything different in the html to use them. You just include the file name. The alt attributes text is very important for many reasons including, to provide a description of the image in case it does not load right away, to provide information for robots that might crawl your page, such as for search engine optimization, and for users that may need screen readers to access your content.
 
 Alt Text Content Requirements:
 
-It is required to provide meaningful and descriptive alt text for all
-images in all WDD courses. The standard is that at least two (2) word,
-relevant description is provided for each image. Typically this means
-that you should avoid using phrases such as "image of" or "picture of"
-in your alt text. Instead, just describe what the image is showing.
-For example, instead of using alt="image of a sunset", you would use
-alt="sunset over the mountains".
+It is required to provide meaningful and descriptive alt text for all images in all WDD courses. The standard is that at least two (2) word, relevant description is provided for each image. Typically this means that you should avoid using phrases such as "image of" or "picture of" in your alt text. Instead, just describe what the image is showing. For example, instead of using alt="image of a sunset", you would use alt="sunset over the mountains".
 
 Ex:
 
@@ -142,8 +94,7 @@ Ex:
 
 Image Optimization:
 
-Squoosh.app is a free online tool that you can use to optimize
-images for the web.
+Squoosh.app is a free online tool that you can use to optimize images for the web.
 
 Three Basic Steps of Image Optimization:
 
@@ -153,30 +104,17 @@ design of the web page.
 3. Reduce the quality of the image to an acceptable level which
 will reduce its file size.
 
-(In this course, all images must be optimized in order to reduce
-overall page weight. The standard is that all images need to be
-less than 125kB in memory size. If you have an image that is
-larger than 125kB, you will need to reduce its size by
-optimizing it.)
+(In this course, all images must be optimized in order to reduce overall page weight. The standard is that all images need to be less than 125kB in memory size. If you have an image that is larger than 125kB, you will need to reduce its size by optimizing it.)
 
 File Path Essentials:
 
-File paths refer to the way we locate a file in a file system
-and your website uses file paths to link to files such as
-images and stylesheets. If a referenced asset, such as an
-image file, does not show up on your page either locally on
-your computer or when you publish it to GitHub Pages, you
-should check the file and file path.
+File paths refer to the way we locate a file in a file system and your website uses file paths to link to files such as images and stylesheets. If a referenced asset, such as an image file, does not show up on your page either locally on your computer or when you publish it to GitHub Pages, you should check the file and file path.
 
 Common File Path Examples:
 
 Absolute Paths:
 
-An absolute path gives the full path to aa file and is used
-for external resources. When using absolute paths on the web,
-the path should begin with the protocol, such as https://.
-Absolute paths for a resource are always the same, regardless of where
-the source file is located.
+An absolute path gives the full path to aa file and is used for external resources. When using absolute paths on the web, the path should begin with the protocol, such as https://. Absolute paths for a resource are always the same, regardless of where the source file is located.
 
 Ex:
 
@@ -184,53 +122,33 @@ Ex:
 
 Relative Paths:
 
-A relative file path defines how to find a file relative to the
-location of the source file. It may be in the same directory or it
-may be in a parent directory or in a subdirectory compared to the
-source file.
+A relative file path defines how to find a file relative to the location of the source file. It may be in the same directory or it may be in a parent directory or in a subdirectory compared to the source file.
 
-If the target file is in the same directory, you can list the file name
-directory, or you can start with a period, which indicates the current
-directory. You use two periods to refer to the parent directory, and
-you put a forward slash between directory names.
+If the target file is in the same directory, you can list the file name directory, or you can start with a period, which indicates the current directory. You use two periods to refer to the parent directory, and you put a forward slash between directory names.
 
-To reference a file that is in the current directory, you would use
-other.html or ./other.html. To reference a file in the parent directory
-you would use ../other.html. To reference a file that is beneath two
-sub directories, you would use folder1/folder2/other.html.
+To reference a file that is in the current directory, you would use other.html or ./other.html. To reference a file in the parent directory you would use ../other.html. To reference a file that is beneath two sub directories, you would use folder1/folder2/other.html.
 
 Relative Path: File in same folder
 
-Referencing a file named about-us.html located in the same folder
-as the referencing HTML file that contains the <a> anchor tag.
+Referencing a file named about-us.html located in the same folder as the referencing HTML file that contains the <a> anchor tag.
 
 <a href="about-us.html">About Us<a>
 
-The file path does not begin with a protocol which means that the file
-path is relative to the html that contains the tag. Because the file
-path does not begin with a period or a slash, the computer will expect
-to find the about-us.html page in the same directory as the file that is
-referencing it.
+The file path does not begin with a protocol which means that the file path is relative to the html that contains the tag. Because the file path does not begin with a period or a slash, the computer will expect to find the about-us.html page in the same directory as the file that is referencing it.
 
-Another method that can be used to reference the current directory is to
-use the ./ notation at the beginning of the path.
+Another method that can be used to reference the current directory is to use the ./ notation at the beginning of the path.
 
 <a href="./about-us.html">About Us<a>
 
 Relative Path: File in subfolder
 
-Referencing an image named profile.png in a sub-folder named images
-(where the image folder is in the same main folder as the main
-source html file.).
+Referencing an image named profile.png in a sub-folder named images (where the image folder is in the same main folder as the main source html file.).
 
 <img src="images/profile.png" alt="Xavier Rodriguez" width="100" height="200">
 
 Relative Path: A folder that is located in a parent or higher folder
 
-A file in the week02 folder references an image named castle.jpg, but
-this image is in an images folder that is located at the root level (a
-level higher than the week02 folder). The ../ notation is used to go
-up a folder.
+A file in the week02 folder references an image named castle.jpg, but this image is in an images folder that is located at the root level (a level higher than the week02 folder). The ../ notation is used to go up a folder.
 
 <img src="../images/castle.jpg" alt="A hunting lodge castle in Germany." width="300">
 
@@ -239,17 +157,11 @@ File Path Summary:
 Starting a path with "/" will go to the root folder and start there.
 Starting a path with"../" will go one folder up and start there.
 Starting a path with"../../" will go two folders up and start there (and so on...).
-Starting a path with "./" indicates to start in the current folder.
-To move forward, or down a sub folder, start with the first sub-folder
-and include a "/" after each subfolder name.
+Starting a path with "./" indicates to start in the current folder. To move forward, or down a sub folder, start with the first sub-folder and include a "/" after each subfolder name.
 
 File and Folder Naming Standards:
 
-When working on the web, there are many things that affect the
-operation of the files, such as the browser, the protocols, the
-operating system, the language, etc. While many of these are out
-of your control, you can keep your work consistent and manageable
-through file and folder naming conventions.
+When working on the web, there are many things that affect the operation of the files, such as the browser, the protocols, the operating system, the language, etc. While many of these are out of your control, you can keep your work consistent and manageable through file and folder naming conventions.
 
 Naming Convention Rules:
 
@@ -285,10 +197,7 @@ Semantic tags have meaning built into their name. They tell both the browser and
 
 What are Semantic Tags?
 
-Semantic tags describe the meaning and purpose of the content they
-contain. When you read the tag name, you can understand what kind of
-information is inside. These tags make your HTML code easier to read
-and help screen readers assist people with visual impairments.
+Semantic tags describe the meaning and purpose of the content they contain. When you read the tag name, you can understand what kind of information is inside. These tags make your HTML code easier to read and help screen readers assist people with visual impairments.
 
 Common semantic tags include:
 
@@ -333,9 +242,7 @@ Ex:
 
 What Are Non-Semantic Tags?
 
-Non-semantic tags do not provide information about the meaning of their
-content. They are primarily used for styling and layout purposes. The
-two most common non-semantic tags are div and span.
+Non-semantic tags do not provide information about the meaning of their content. They are primarily used for styling and layout purposes. The two most common non-semantic tags are div and span.
 
 div - A container used for grouping and styling a section of a page
 span - A container used for styling small portions of text
@@ -352,34 +259,19 @@ Ex:
     </div>
 </div>
 
-In this example, the div tags are used to create layout sections, and
-the span tag is used to highlight a specific word. The tags themselves
-do not tell us what the content represents, but they allow us to apply
-styling to organize and format the page.
+In this example, the div tags are used to create layout sections, and the span tag is used to highlight a specific word. The tags themselves do not tell us what the content represents, but they allow us to apply styling to organize and format the page.
 
 When to Use Each Type
 
-Use semantic tags whenever possible because they make your code more
-meaningful and accessible. Use semantic tags when the content has a
-specific purpose or meaning, such as navigation, main content, or
-article text.
+Use semantic tags whenever possible because they make your code more meaningful and accessible. Use semantic tags when the content has a specific purpose or meaning, such as navigation, main content, or article text.
 
-Use non-semantic tags when you need to group elements for styling
-purposes but the content does not have a specific meaning. For
-example, use a div to create a colored background area or use a span
-to change the color of a few words.
+Use non-semantic tags when you need to group elements for styling purposes but the content does not have a specific meaning. For example, use a div to create a colored background area or use a span to change the color of a few words.
 
 HTML Heading Tags (h1-h6)
 
-HTML heading tags are used to create titles and section headers on
-web pages. These tags help organize content and make it easier for
-users to read and understand your webpage. Search engines also use
-heading tags to understand the structure and importance of your
-content.
+HTML heading tags are used to create titles and section headers on web pages. These tags help organize content and make it easier for users to read and understand your webpage. Search engines also use heading tags to understand the structure and importance of your content.
 
-There are six different heading tags available, numbered h1 to h6.
-The h1 tag creates the largest and most important heading, while
-h6 creates the smallest heading.
+There are six different heading tags available, numbered h1 to h6. The h1 tag creates the largest and most important heading, while h6 creates the smallest heading.
 
 The Six Heading Tags
 
@@ -392,9 +284,7 @@ h6 - The smallest heading, rarely used but available for detailed organization.
 
 How to Use Heading Tags
 
-You should use heading tags in order from largest to smallest. Do not
-skip heading levels. For example, do not use an h4 directly after an
-h2 without using h3 first.
+You should use heading tags in order from largest to smallest. Do not skip heading levels. For example, do not use an h4 directly after an h2 without using h3 first.
 
 Ex:
 
@@ -410,33 +300,17 @@ Ex:
 
 Why You Should Not Skip Heading Levels
 
-It is important to use heading tags in the correct order without
-skipping levels. Skipping heading levels can cause problems for
-people who use screen readers to navigate websites. Screen readers
-are tools that help people with vision problems read web content
-by speaking it aloud.
+It is important to use heading tags in the correct order without skipping levels. Skipping heading levels can cause problems for people who use screen readers to navigate websites. Screen readers are tools that help people with vision problems read web content by speaking it aloud.
 
-When you skip heading levels, screen readers cannot understand the
-proper structure of your webpage. This makes it difficult for users
-to jump between sections or understand how your content is organized.
-Search engines also prefer websites that use proper heading structure
-because it helps them understand what your content is about. Following
-the correct heading order makes your website more accessible and easier
-to find in search results.
+When you skip heading levels, screen readers cannot understand the proper structure of your webpage. This makes it difficult for users to jump between sections or understand how your content is organized. Search engines also prefer websites that use proper heading structure because it helps them understand what your content is about. Following the correct heading order makes your website more accessible and easier to find in search results.
 
 An Introduction to CSS
 
-CSS (Cascading Style Sheets) is a rule set language that defines the
-style and presentation of an HTML document. CSS rules select elements
-from the document and contain style and layout delarations.
+CSS (Cascading Style Sheets) is a rule set language that defines the style and presentation of an HTML document. CSS rules select elements from the document and contain style and layout delarations.
 
 CSS Syntax
 
-CSS rules are made up of a selector and a declaration block { }. The
-selector is the HTML element(s) you want to style and the declaration
-block contains one or more declarations separated by semicolons (;).
-Each declaration includes a CSS property name and a value, separated by
-a colon (:). The declaration block is enclosed in curly braces.
+CSS rules are made up of a selector and a declaration block { }. The selector is the HTML element(s) you want to style and the declaration block contains one or more declarations separated by semicolons (;). Each declaration includes a CSS property name and a value, separated by a colon (:). The declaration block is enclosed in curly braces.
 
 CSS Rule Example
 
@@ -458,45 +332,30 @@ CSS Units of Measurement
 
 Numeric Values
 
-In CSS, property length values are needed to provide layout and
-presentation control. There are two main types - absolute and relative.
-The absolute length, like 10px, is not relative to anything else and
-is typically the same size on most devices. Relative lengths, like 90%,
-are dependent on other items including the parent, sibling, or the size
-of the viewport.
+In CSS, property length values are needed to provide layout and presentation control. There are two main types - absolute and relative. The absolute length, like 10px, is not relative to anything else and is typically the same size on most devices. Relative lengths, like 90%, are dependent on other items including the parent, sibling, or the size of the viewport.
 
 Color Values
 
-In addition to the numeric units used for sizes, CSS also allows you to
-specify colors in various ways. CSS color values for text, backgrounds, 
-and wherever applicable can be coded by the following methods:
+In addition to the numeric units used for sizes, CSS also allows you to specify colors in various ways. CSS color values for text, backgrounds,  and wherever applicable can be coded by the following methods:
 
 keyword: antiquewhite, burlywood, yellow, lightyellow, etc.
 
 hexadecimal RGB (red, gree, blue): #faebd7
-Where the first two characters are the red value, the next two are the
-green value, and the last two are the blue value in hexadecimal (base16)
-format (0 to F).
+Where the first two characters are the red value, the next two are the green value, and the last two are the blue value in hexadecimal (base16) format (0 to F).
 
 RGB or RGBA: rgb(250, 235, 215) or rgb(250, 235, 215 / 1)
-Where r is a red value ranging from 0 to 255, g is a green value
-ranging from 0 to 255, b is a blue value ranging from 0 to 255, and
-the last value is the alpha value ranging from 0 to 1 (0% to 100%).
+Where r is a red value ranging from 0 to 255, g is a green value ranging from 0 to 255, b is a blue value ranging from 0 to 255, and the last value is the alpha value ranging from 0 to 1 (0% to 100%).
 
 HSLA: hsla(34, 78%, 91%, 1)
-Where h is the hue (0 to 360), s is the saturation (0% to 100%), 1 is
-the lightness (0% to 100%), and a is the alpha value (0 to 1).
+Where h is the hue (0 to 360), s is the saturation (0% to 100%), 1 is the lightness (0% to 100%), and a is the alpha value (0 to 1).
 
 CSS Box Model
 
-The CSS Box Model is a box that wraps around every element. From the
-inside out, the model defines how the content, padding, border, and
-margin are rendered.
+The CSS Box Model is a box that wraps around every element. From the inside out, the model defines how the content, padding, border, and margin are rendered.
 
 Ex:
 
-The content is 400 pixels wide and the height is driven by the actual
-content, whatever it happens to be.
+The content is 400 pixels wide and the height is driven by the actual content, whatever it happens to be.
 
 div {
     width: 400px;
@@ -522,10 +381,7 @@ div {
 
 CSS Shorthand Notation
 
-CSS shorthand  notation is generally considered best practice for
-conciseness, readability, and performance. However, longhand notation
-has its uses and can be more appropriate in certain situations where
-specificity is needed.
+CSS shorthand  notation is generally considered best practice for conciseness, readability, and performance. However, longhand notation has its uses and can be more appropriate in certain situations where specificity is needed.
 
 CSS Shorthand Declarations using the margin property
 
@@ -555,26 +411,169 @@ Common Border Shorthand
 
 border: 1px solid rgb(0 0 0 / 10%);
 
-Applies a 1 pixel border around the element with a solid line and a
-color that match the background of the contain/parent element. The
-color is set to 10% opacity.
+Applies a 1 pixel border around the element with a solid line and a color that match the background of the contain/parent element. The color is set to 10% opacity.
 
 HTML Block and Inline Elements
 
-An HTML element is, by default, either a block-level or an inline
-element. Block elements occupy the full width of their container and
-start on new lines. Inline elements only occupy the space needed for
-the content and do not start on a new line.
+An HTML element is, by default, either a block-level or an inline element. Block elements occupy the full width of their container and start on new lines. Inline elements only occupy the space needed for the content and do not start on a new line.
 
 Block-level Elements
 
-Block level elements start on a new line on a page and take up the full
-width of their container. This means the element container stretches out
-to the left and right as far as it can. Some common block-level elements are: <p> and <div> and all the semantic containers like <header>,
-<footer>, <main>, <nav>, and <section>.
+Block level elements start on a new line on a page and take up the full width of their container. This means the element container stretches out to the left and right as far as it can. Some common block-level elements are: <p> and <div> and all the semantic containers like <header>, <footer>, <main>, <nav>, and <section>.
 
 Inline Elements
 
-Inline elements do not start on a new line and only take up the space
-bounded by the tags defining the element. Some common inline elements
-are: <span>, <a>, <img>, <button>, and <input>.
+Inline elements do not start on a new line and only take up the space bounded by the tags defining the element. Some common inline elements are: <span>, <a>, <img>, <button>, and <input>.
+
+Code Comments
+
+HTML:
+
+<!-- This is an HTML comment -->
+
+CSS:
+
+/* This is a comment */
+
+CSS Selectors - Type, Universal, Class, ID
+
+CSS selectors are the way you specify which elements you want to style. They form the subject line of a CSS rule. A CSS rule's selector is the first part of the rule that tells the browser which HTML elements  should have the CSS property values applied. The elements selected by the selector are referred to as the subjects of the selector.
+
+CSS Selector Types
+
+Universal       * { ... }       Applies to all elements
+
+Type (Element)  h1 { ... }      Applies to all <h1> elements
+
+Class           .red ( ... )    Applies to all elements with the "red" --------------------------------class value
+
+ID              #red { ... }    Applies to the one element with the --------------------------------"red" id value
+
+Using the Class Attribute
+
+A class attribute can be applied to many elements in a document. More than one class can be applied to a single element. A class can be selected in CSS by using period (.) notation.
+
+HTML
+
+<div class="callout highlight active">
+
+<span class="highlight">
+
+CSS
+
+.highlight {declarations}
+
+.callout {declarations}
+
+.active {declarations}
+
+Using the ID Attribute
+
+An id attribute can only be applied to one element per document, and each element may only have one id. The id can be selected by a CSS id selector using hash (#) notation.
+
+HTML
+
+<nav id="sub menu">
+
+CSS
+
+#sub-menu {declarations}
+
+CSS Layout - Float
+
+The CSS float property should be used for specific purposes and not for general page layout. For example, floating related images to the left or right inside containers with paragraphs or other article content is appropriate. When an element is floated, it is removed from the normal document flow.
+
+CSS Float is a property that can be applied to elements to remove them from the normal document flow and allow other elements to wrap around them. The float property can be applied to block-level elements and inline elements. The float property can be set to left or right to mvoe the element to the left or right in the document flow. For example, this code block in the paragraph is floated to the right and contains a shorthanad margin declaration that applies a margin on all sides of the element.
+
+Content that follows floating elements
+
+The clear property in CSS is used to control how elements behave around floating elements. When you use the float property to move elements to the left or right side of their container, other elements will wrap around them. The clear property allows you stop this wrapping behavior and force an element to come below any floating elements.
+
+When using clear: left on an element, it will move below any floating elements that are positioned on the left side, ensuring that no left-floating elements appear beside it on the left. Similarly, clear: right makes the element come below any right-floating elements, and clear: both will ensure that the element comes below all floating elements on either side.
+
+CSS Layout - Position
+
+Elements are positioned on a document using the normal flow by default. Someimtes, the layout calls for placing items by absolute or fixed positions. It can be tempting to use absolute positioning for everything on a page, because you can specify exactly where each item should be. But, doing this usually causes unintended outcomes, especially if the content of the page changes, or if it viewed on different devices.
+
+Because absolute or fixed positions can lead to unintended outcomes, you should limite using them, and when you do, use them only for specific areas and not the entire document.
+
+CSS positioning allows you to control exactly where the elements appear on a webpage. Three important positioning methods are relative positioning, absolute positioning, and fixed positioning. Understanding how these work together helps you create precise layouts and interactive elements.
+
+All positioning methods use the same four properties to set location: top, bottom, left, and right. These properties tell the browser how far to move the element from each edge of its reference point.
+
+Relative Positioning
+
+When you use position: relative, the element is moved from its normal position but still takes up its original space in the document flow. Think of it as moving a book on a table while keeping its original spot reserved. Other elements will not move into the space that the relatively positioned element originally occupied.
+
+Keeps original space in document flow - Other elements stay in their normal positions
+
+Moves relative to its normal position - Uses where the element would naturally appear as the starting point
+
+Creates positioning context for children - Child elements with absolute positioning will use this as their reference point
+
+Can overlap other elements - May cover other content when moved from its original location
+
+Ex: (moves the text 10 pixels down and 20 pixels to the right from where it would normally appear, but other elements still act as if the text is in its original location)
+
+.shifted-text {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: yellow;
+}
+
+Absolute Positioning
+
+When you use position: absolute, the element is positioned relative to its closest positioned parent element. If no parent element has positioning set, the element will be positioned relative to the entire webpage body. The element is removed from the normal document flow, which means other elements will act as if it does not exist.
+
+Removes element from document flow - Other elements fill the space as if the positioned element is not there
+
+Positioned relative to closest positioned parent - Looks for the nearest parent with position set to relative, absolute, or fixed
+
+Stays with the page content when the page scrolls - The element moves with the page content when users scroll
+
+Can overlap other elements - May cover or be covered by other page content
+
+Ex: (creates a popup window that appears 50 pixels from the top and 20 pixels from the right edge of its positioned parent element)
+
+.popup-window {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+Fixed Positioning
+
+When you use position: fixed, the element is positioned relative to the browser window itself. The element stays in the exact same place on the screen even when users scroll up or down the page. This makes fixed positioning perfect for navigation bars, headers, or buttons that should always remain visible.
+
+Removes element from document view - Other elements fill the space as if the positioned element is not there
+
+Positioned relative to browser window - Always uses the viewport (visible area) as the reference point
+
+Stays in same screen location when scrolling - Does not move when users scroll the page
+
+Always visible to users - Remain on screen regardless of page length or scroll position
+
+Ex: (creates a header that stays at the top of the browser window even when users scroll down the page. The z-index property ensures the header appears above other page content)
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    z-index: 100;
+}
+
+Images and position/sizing
+
+CSS is often used to set the position and size of an image. When setting the size of an image, remember that images can become pixalated or disorted if you change the aspect ratio of their original dimensions. To avoid this, typically only set either the width or height in CSS, preserving the aspect ratio.
+
+When an image is within a container that has defined dimensions, using width: 100% on the image is a standard approach to make it fill the container.
+
