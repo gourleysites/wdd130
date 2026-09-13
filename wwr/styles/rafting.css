@@ -81,7 +81,9 @@ article img {
     opacity: 100%;
 }
 
-.hero article img {
+.hero article {
+    position: absolute;
     float: right;
     width: 125px;
+    
 }
