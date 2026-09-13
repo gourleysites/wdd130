@@ -1,9 +1,8 @@
 :root {
     --primary-color: #865e28;
-    --secondary-color: #122B49;
+    --secondary-color: black;
     --accent1-color: rgb(34, 95, 228);
     --accent2-color: #fff;
-    --text-color: black;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -16,12 +15,16 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+ul a {
+    color: var(--primary-color);
 }
 
 h1, h2 {
@@ -83,7 +86,9 @@ article img {
 
 .hero article {
     position: absolute;
+}
+
+.hero article img {
     float: right;
     width: 125px;
-    
 }
