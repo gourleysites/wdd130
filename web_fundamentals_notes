@@ -644,7 +644,7 @@ Ex:
 :root {
     --heading-background-color: #f06;
     --heading-text-color: #333;
-    ---heading-font: 'Montserrat', Helvetica, sans-serif;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;
     --broder: 1px solid rgb(0 0 0 / 0.1);
 }
