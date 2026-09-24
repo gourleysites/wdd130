@@ -663,3 +663,176 @@ aside {
     padding: var(--padding);
     box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
 }
+
+CSS Flex
+
+Responsive webpages are pages that automatically adjust their layout,
+content, and design elements to provide an optimal viewing experience
+across different screen sizes and devices, from desktop computers to
+tablets to mobile phones.
+
+The flex CSS display property makes creating and controlling responsive
+layouts easy, especially for arranging items in a single row or column.
+Flexbox is a one-dimensional layout method for laying out items in rows
+or columns. Items flex to fill additional space and shrink to fit into
+smaller spaces.
+
+Grid layouts are used for creating responsive webpages. Flexbox layout
+is most appropriate for the components of a page and small-scale layouts,
+while the Grid layout is intended for larger scale layouts.
+
+CSS Flexbox makes vertically centering a block of content inside its
+parent easier. The children of a flex container work together to fill
+the available space.
+
+- Flex containers and flex items: The container is the parent and has the
+display: flex; declaration. The items are the direct children of the
+container and can be manipulated using various flex properties.
+
+- Flex directon: The flex-direction property defines the direction in
+which the flex items are placed in the flex container. It can be set to
+row, row-reverse, column, or cloumn-reverse.
+
+    - row: Items are placed the same as the text direction.
+    - row-reverse: Items are placed opposite to the text direction.
+    - column: Items are placed top to bottom.
+    - column-reverse: Items are placed bottom to top.
+
+- Justify content: The justify-content property aligns the flex items 
+along the main axis (horizontally in a row, vertically in a column). It
+can be set to values like flex-start, flex-end, center, space-between,
+or space-around.
+
+    - flex-start: Items align to the left side of the container.
+    - flex-end: Items align to the right side of the container.
+    - center: Items align at the center of the container.
+    - space-between: Items display with equal spacing between them.
+    - space-around: Items display with equal spacing around them.
+
+- Align items: The align-items property aligns the flex items along the 
+cross axis (vertically in a row, horizontally in a column). It can be
+set to values like flex-start, flex-end, baseline, or stretch. (Can also
+use align-self for individual items.)
+
+    - flex-start: Items align to the top of the container.
+    - flex-end: Items align to the bottom of the container.
+    - center: Items align at the vertical center of the container.
+    - baseline: Items display at the baseline of the container.
+    - stretch: Items are stretched to fit the container.
+
+- Order: Sometimes reversing the row or column order of a container is 
+not enough. In these cases, we can apply the order property to individual
+items. By default, items have a value of 0, but we can use this property 
+to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
+
+- Wrap items: Items can be spread out using the flex-wrap property.
+
+    - nowrap: Every item is fit to a single line.
+    - wrap: Items wrap around to additional lines.
+    - wrap-reverse: Items wrap around to additional lines in reverse.
+
+- Align content: You can use align-content to set how multiple lines are 
+spaced apart from each other.
+
+    - flex-start: Lines are packed at the top of the container.
+    - flex-end: Lines are packed at the bottom of the container.
+    - center: Lines are packed at the vertical center of the container.
+    - space-between: Lines display with equal spacing between them.
+    - space-around: Lines display with equal spacing around them.
+    - stretch: Lines are stretched to fit the container.
+
+- Place items: The place-items property is a shorthand for align-items 
+and justify-items. It can be used to control the alignment of items 
+within a grid container.
+
+The following example shows how these could be applied to a container to
+arrange its children in a horizontal row, centered horizontally and 
+vertically.
+
+Ex:
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+CSS Grids
+
+CSS Grid Layout is a two-dimensional layout system for the web that
+allows you to arrange content in rows and columns. It includes many 
+features that make building complex layouts straightforward.
+
+CSS Grid is a powerful layout system that allows you to easily create 
+complex web page layouts. Think of it as drawing invisible lines on your
+webpage to create rows and columns, similar to how you might organize 
+content in a table or spreadsheet.
+
+Creating a Grid Layout 
+
+To create a CSS Grid layout you need to apply certain properties to the 
+grid container, which is the parent element that holds all your grid 
+items. Then, the immediate children of that parent container will respond
+to grid declarations (but grandchildren will not).
+
+The most common grid properties are:
+
+display: grid - Turns an element into a grid container
+grid-template-columns - Defines the number and size of columns 
+grid-template-rows - Defines the number and size of rows 
+gap - Sets the space between grid items 
+
+Defining Columns and Rows 
+
+The grid-template-columns and grid-tempplate-rows properties allow you 
+to specify exactly how your grid should be structured. You can use 
+different units to control sizing, such as pixels (px), percentages (%),
+or the flexible fr unit.
+
+Common ways to define grid tracks:
+
+Fixed sizes - Use pixels for exact measurements: 200px 150px 100px
+Flexible sizes - Use fr units for share available space: 1fr 2fr 1fr 
+Mixed sizes - Combine different units: 200px 1fr 100px 
+Repeat function - Use repeat() for repeated patterns: repeat(3, 1fr)
+
+Parent elements that contain a grid layout are given the display: grid;
+declaration. The immediate children of that parent container can then
+respond to grid declarations (but grandchildren cannot).
+
+Grid layouts
+
+- grid-column-start is used to determine where the vertical border at
+the left of the grid is (can be negative)
+
+- grid-column-end is used to determine where the vertical border at the 
+right of the grid is (sometimes can be a lesser value than start)
+
+- span can be used instead of stating where the end of the grid is, can 
+be used to determine how big it is 
+
+- grid-column can be used as grid-column-start and grid-column-end 
+combined by determining two values with a slash between (can use span)
+
+- grid-row-start works the same as grid-column-start but along the 
+vertical axis
+
+- grid-row works the same as grid-column but along the vertical axis 
+
+- grid-area combines grid-column and grid-row with four values separated 
+by slashes: grid-row-start, grid-column-start, grid-row-end, followed by
+grid-column-end 
+
+- order can be used to rearrange the position of a specific item
+
+- grid-template-columns can have the columns sizes adjusted with 
+different units of measurments (can use the repeat function for columns 
+that are the same size)
+
+- grid-template-rows can be used the same way as grid-template-columns 
+
+- grid-template combines grid-template-columns and grid-template-rows into 
+one shorthand property with a slash separating the two properties 
