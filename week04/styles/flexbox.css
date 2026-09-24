@@ -8,10 +8,14 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .flex-item {
-    width: 250px;
+    width: 350px;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
@@ -29,4 +33,6 @@ body {
 
 .item3 {
     min-height: 300px;
+    grid-template-columns: 1/3;
 }
+
