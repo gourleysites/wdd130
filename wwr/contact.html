@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Info</title>
+        <meta name="description" content="Adam Gourley, WDD130, Developing a contact info page">
+        <meta name="author" content="Adam Gourley">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body class="body">
+        <header>
+            <img src="images/whitewater-rafting-logo.jpg" alt="Whitewater Rafting logo with a splash of water behind" width="200">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="contact-info">
+                <h3>Whitewater Rafting Company</h3>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p>info@whitewater.com</p>
+            </div>
+            <div class="reservation">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11898.12918134044!2d-111.92083801563784!3d41.79529230285571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1790992856933!5m2!1sen!2sus" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <form>
+                    <div class="information">
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="options">
+                        <label for="choices">Message Purpose</label>
+                        <div class="options-group">
+                            <div class="options-choice">
+                            <input type="radio" id="option2" name="choices">
+                            <label for="option1">General Inquiry</label>
+                            </div>
+                            <div class="options-choice">
+                            <input type="radio" id="option2" name="choices">
+                            <label for="option2">Reservation Question</label>
+                            </div>
+                            <div class="options-choice">
+                            <input type="radio" id="option3" name="choices">                              
+                            <label for="option3">Website Suggestion</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Type here"></textarea>
+                    </div>
+                    <div class="subscription">
+                        <input type="checkbox" id="subscribe" name="subscribe">                        
+                        <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+                    </div>
+                    <div class="button">
+                    <button type="submit">Get in Touch!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="employees">
+                <h4>We Are Here to Serve You</h4>
+                <div class="employees-container">
+                <img src="images/wwr-employee.jpg" alt="Smiling man in a helmet">
+                <img src="images/wwr-employees.jpg" alt="Two people walking along a river">
+                <img src="images/wwr-employee2.jpg" alt="Man in a blue shirt riding a kayak">
+            </div>
+            </div>
+        </main>
+        <footer class="footer-text">
+            <p>&copy;2026 🌊 Whitewater Rafting 🌊 Adam Gourley</p>
+            <nav class="socialmedia">
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram-icon.png" alt="Instagram Icon" width="50">
+                </a>    
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook-icon.png" alt="Facebook Icon" width="50">
+                </a>
+                <a href="https://www.youtube.com">
+                    <img src="images/youtube-icon.png" alt="Youtube Icon" width="50">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
