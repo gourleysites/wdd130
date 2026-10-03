@@ -50,7 +50,7 @@ ul a {
     align-items: center;
 }
 
-h2 {
+.adventures h2 {
     background-color: var(--accent1-color);
     width: 100%;
     padding: 10px;
@@ -206,6 +206,7 @@ footer a {
     padding: 8px;
     text-align: center;
     color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-info p {
@@ -252,9 +253,11 @@ footer a {
     padding: 10px;
 }
 
-.employees h4 {
+.employees h2 {
     text-align: center;
     font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .employees-container {
