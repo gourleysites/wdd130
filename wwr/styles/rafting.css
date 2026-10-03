@@ -280,7 +280,7 @@ footer a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 10px;
 }
 
