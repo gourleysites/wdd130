@@ -133,7 +133,8 @@ select {
 }
 
 textarea {
-    width: 350px;
+    width: 370px;
     align-items: center;
     margin: 5px;
+    resize: none;
 }
