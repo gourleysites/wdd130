@@ -177,7 +177,11 @@ header nav {
     margin: 0;
 }
 
-article {
+article img {
+    opacity: 100%;
+}
+
+.hero article {
     position: absolute;
     bottom: 5px;
     right: 25px;
@@ -185,14 +189,6 @@ article {
     opacity: 0.7;
     color: var(--accent2-color);
     width: 90%;
-}
-
-article img {
-    opacity: 100%;
-}
-
-.hero article {
-    position: absolute;
 }
 
 .hero article img {
@@ -300,8 +296,9 @@ footer a {
 .employees h2 {
     text-align: center;
     font-size: 20px;
-    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 .employees-container {
@@ -331,6 +328,14 @@ footer a {
     align-items: center;
     gap: 2rem;
     padding: 10px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 0;
+    padding: 15px;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .options-group {
@@ -352,6 +357,7 @@ footer a {
 
 .subscription {
     text-align: center;
+    padding: 15px;
 }
 
 .button button {
@@ -364,6 +370,7 @@ footer a {
 }
 .button {
     text-align: center;
+    grid-column: 1 / -1;
 }
 
 .map {
@@ -386,18 +393,26 @@ footer a {
     display: block;
     width: 100%;
     height: auto;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .homepage-hero h1 {
     position: absolute;
     width: 100%;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-    top: 300px;
+    top: 40%;
     font-size: 3rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .form-item {
@@ -416,7 +431,7 @@ footer a {
 }
 
 .form-section {
-    border: 2px solid #ccc;
+    border: 2px solid rgb(204, 204, 204);
     border-radius: 0;
     padding: 15px;
 }
@@ -432,14 +447,159 @@ footer a {
 
 button {
     margin: 1rem;
-    background-color: navy;
-    color: #fff;
+    background-color: rgb(0, 0, 128);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 30%;
 }
 
 button:hover {
     background-color: rgb(52, 169, 207);
+}
+
+.trip-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 128);
+    color: var(--accent2-color);
+    text-decoration: none;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.trip-link-button:hover {
+    background-color: rgb(52, 169, 207);
+}
+
+.trips {
+    text-align: center;
+}
+
+.trips .reservation {
+    display: block;
+}
+
+.trips ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.information {
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 0;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.info-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.information img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.information p {
+    grid-column: 2;
+}
+
+.trips-contact .reservation {
+    display: block;
+}
+
+.trips-contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.trips-contact {
+    text-align: center;
+    display: block;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 0;
+    padding: 15px;
+}
+
+.trips-contact h1 {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+.trips-information {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    align-items: start;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    min-width: 0;
+}
+
+.highlights article {
+    margin: 0;
+}
+
+.highlights h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+.highlights figcaption {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    margin: 5px;
+}
+
+.highlights img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.trip-highlight {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    text-align: center;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
